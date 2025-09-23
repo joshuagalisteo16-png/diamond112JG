@@ -29,24 +29,23 @@ def top_diamond(starstoDraw):
         #Decrease outside spaces and increase inside spaces for next row
         spacesOutside -= 1
         spacesInside += 2
-
-def get_valid_input(counter):
-    while True:
-        try:
-            userInput = int(input("Enter an odd number from 1 to 13: "))
-            if userInput < 1 or userInput > 13:
-                print("Number must be between 1 and 13.")
-            elif userInput % 2 == 0:
-                print("Number must be odd.")
-            else:
-                return userInput
-        except ValueError:
-            print("Please enter a valid integer.")
+    def get_valid_input(counter):
+        while True:
+            try:
+                userInput = int(input("Enter an odd number from 1 to 13: "))
+                if userInput < 1 or userInput > 13:
+                    print("Number must be between 1 and 13.")
+                elif userInput % 2 == 0:
+                    print("Number must be odd.")
+                else:
+                    return userInput
+            except ValueError:
+                print("Please enter a valid integer.")
 
     userInput = get_valid_input
-#Function to draw the top half
 top_diamond(userInput)
 
+#Function to draw the top half
 #def bottom_diamond
     #spacesOutside = userInput // -2
     #spacesInside = -1

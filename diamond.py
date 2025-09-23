@@ -9,6 +9,7 @@ counter, rowsDrawn, spacesOutside, spacesInside, starstoDraw, userInput = 0,0,0,
 #I'm using a function to organize.
 userInput=int(input("Enter an odd number (1-13): "))
 
+<<<<<<< HEAD
 def topDiamond(userInput):
     rowsDrawn= 0
     spacesOutside = userInput // 2 #starts first star at middle row. Num is rounded up.

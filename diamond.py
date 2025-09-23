@@ -13,6 +13,28 @@ def topDiamond(userInput):
     rowsDrawn= 0
     spacesOutside = userInput // 2 #starts first star at middle row. Num is rounded up.
     spacesInside= -1 #starts at 1 to ignore the "space" at the first star.
+=======
+def top_diamond(starstoDraw): 
+    spacesOutside = userInput // 2
+    #Start number of spaces between stars - starts at -1 for the top point
+    spacesInside = -1 
+    #Loop to draw each line of the top half of the diamond
+    rowsDrawn = userInput // 2 + 1
+    for i in range(rowsDrawn):
+        #Print spaces on the outside (left side)
+        print(" " * spacesOutside, end="")
+        print("*", end="")
+        #If not the first line, print inside spaces and the second star 
+        #Decrease the outside and increase the spaces inside for next row
+         if spacesInside >= 0:
+            print(" " * spacesInside, end="")
+            print("*", end="")
+        #Move to the next line
+        print()
+        #Decrease outside spaces and increase inside spaces for next row
+        spacesOutside -= 1
+        spacesInside += 2
+>>>>>>> db380acbf0917bf623f9308b73434c945d965df5
 
     while rowsDrawn <= userInput // 2:
         output= " " #begins a new row.

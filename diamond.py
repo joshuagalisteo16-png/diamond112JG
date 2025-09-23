@@ -9,12 +9,11 @@ counter, rowsDrawn, spacesOutside, spacesInside, starstoDraw, userInput = 0,0,0,
 #I'm using a function to organize.
 userInput=int(input("Enter an odd number (1-13): "))
 
-<<<<<<< HEAD
 def topDiamond(userInput):
     rowsDrawn= 0
     spacesOutside = userInput // 2 #starts first star at middle row. Num is rounded up.
     spacesInside= -1 #starts at 1 to ignore the "space" at the first star.
-=======
+
 def top_diamond(starstoDraw): 
     spacesOutside = userInput // 2
     #Start number of spaces between stars - starts at -1 for the top point
@@ -35,7 +34,6 @@ def top_diamond(starstoDraw):
         #Decrease outside spaces and increase inside spaces for next row
         spacesOutside -= 1
         spacesInside += 2
->>>>>>> db380acbf0917bf623f9308b73434c945d965df5
 
     while rowsDrawn <= userInput // 2:
         output= " " #begins a new row.

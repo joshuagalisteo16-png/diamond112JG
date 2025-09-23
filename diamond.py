@@ -21,7 +21,7 @@ def top_diamond(starstoDraw):
         print("*", end="")
         #If not the first line, print inside spaces and the second star 
         #Decrease the outside and increase the spaces inside for next row
-        if spacesInside == 0:
+         if spacesInside >= 0:
             print(" " * spacesInside, end="")
             print("*", end="")
         #Move to the next line
